@@ -1,11 +1,157 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="pennacap">
+    <meta name="keywords" content="Developer, C, C++, HTML, Assembly, Minecraft, Java, JavaScript, Portfolio, OsDEV, CSS, Python, Discord">
+    <meta name="description" content="Portfolio of Pennacap, a developer and a Minecraft plugin developer.">
+    <meta property="og:title" content="pennacap.dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pennacap.dev/" />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:description" content="Portfolio of Pennacap, a developer and a Minecraft plugin developer." />
+    <link rel="icon" href="logo.png" type="image/png">
+    <script>
+        var a = 5;
+        const reveals = document.getElementsByClassName('reveal');
+        window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('show');
+        }
+        else{
+          reveals[i].classList.remove('show');
+        }
+      }
+    }
+        setInterval(()=>{
+            
+            if (document.getElementById('title').innerHTML.length<'pennacap'.length){
+                document.getElementById('title').innerHTML+='pennacap'.substring(document.getElementById('title').innerHTML.length).charAt(0);
+                return;
+            }
+            clearInterval();
+
+        },100);
+        
+        
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@351&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+        
+        nav {
+            white-space: nowrap;
+        }
+        .normie-button {
+            background-color: #222222;cursor:pointer;padding: 1vh;width:33vw;color: #eeeeee;border:none;transition:all 0.2s;font-weight: bolder;
+            font-family: 'Source Code Pro', monospace;
+
+        }
+        .normie-button:hover{
+            background-color: #333333;
+        }
+        .reveal{
+            opacity: 0;
+            transform: translateY(10vh);
+            transition: 2s all,0s z-index;
+        }
+        .reveal.show{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        ::-webkit-scrollbar {
+            width: 0.5vw;
+        }
+        
+::-webkit-scrollbar-track {
+  background: #2e2e2e; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #222; 
+  border-radius: 10vw;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #111; 
+}
+    </style>
+
+    <title>pennacap.dev - Home</title>
+</head>
+<body style="margin: 0;">
+    <nav style="position: fixed; background-color: #222222;width: 100vw;box-shadow: 0 4px 8px 0 rgba(0.33,0.33,0.33,0.2);display: inline-block;z-index: 99999;">
+        <button class="normie-button" style="background-color: #231226;">HOME</button>
+        <a href="adminbot.html"><button class="normie-button"">ADMINBOT</button></a>
+        <a href="pinc.html"><button class="normie-button"">PENNACAP.INC</button></a>
+          
+        
+    </nav>
+    <main><div style="background-color: #1a1a1a;height: 100vh;">
+        <div style="position:absolute;background-color: #090909;width: 25vw;height: 25vh;border-radius: 5vh;top:37.5vh;left:37.5vw">
+            <h1 style="font-family:monospace;color:#ffffff;text-align: center;font-size: 5vh;" id="title">p</h1>
+            <p style="color: #dedede;text-align:center;font-family: 'Source Code Pro',monospace; font-size: 2vh;">An avid developer.</h2>
+        </div>
+    </div></main>
+    <div style="background-color: #333333;height: 100vh;" >
+        <img src="python.png" class="reveal" style="width:25vw;position:relative;top:25vh;left:12.5vw" alt="Python Logo">
+        <portfolio-description style="position:absolute;font-family: 'Source Code Pro',monospace;font-size: 5vh; color:white; left:60vw;text-align: left;top:150vh" class="reveal">Python since 2016</portfolio-description>
+    </div>
+    <div style="background-color: #1a1a1a;height: 100vh;" >
+        <img src="html.png" class="reveal" style="width:25vw;position:relative;top:25vh;left:60vw" alt="HTML Logo">
+        <portfolio-description style="position:absolute;font-family: 'Source Code Pro',monospace;font-size: 5vh; color:white; left:12.5vw;text-align: left;top:250vh" class="reveal">HTML since 2016</portfolio-description>
+    </div>
+    <div style="background-color: #333333;height: 100vh;" >
         <script>
-            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-        </script>
-    </head>
-    <body>
-        Coming Soon
-    </body>
+            window.onload = () => {
+            for (const element of document.getElementsByClassName('layer3')) {
+                element.style.top = (window.visualViewport.height*3.6) + (window.visualViewport.width*0.05) + "px";
+        element.addEventListener('resize',()=>{
+            element.style.top = (window.visualViewport.height*3.6) + (window.visualViewport.width*0.05) + "px";
+        });
+            }
+            }
+            
+    
+        </script> 
+        <a href="adminbot.html" tabindex="0">
+            <img src="adminbot.webp" style="width:20vw;position:relative;top:25vh;left:20vw; border-radius: 10px;" class="reveal" alt="AdminBot Logo">
+            <portfolio-description style="position:absolute;font-family: 'Roboto Condensed',monospace;font-size: 5vh; color:white; left:20vw;text-align: center;top:350vh;width:20vw" class="layer3 reveal" >ADMINBOT</portfolio-description>
+        </a>
+        <a href="pinc.html" tabindex="0">
+            <img src="pennacap.inc.png" style="width:20vw;position:relative;top:25vh;left:40vw;border-radius: 10px" class="reveal" alt="Pennacap.inc logo">
+            <portfolio-description style="position:absolute;font-family: 'Roboto Condensed',monospace;font-size: 5vh; color:white; left:60vw;text-align: center;top:350vh;width:20vw" class="layer3 reveal" >PENNACAP.INC</portfolio-description>
+        </a>
+    </div>
+    <div style="background-color: #1a1a1a;height: 100vh;" >
+        <img src="computer.png" class="reveal" style="width:25vw;position:relative;top:25vh;left:20vw" alt="Computer Clipart">
+        <portfolio-description style="position:absolute;font-family: 'Source Code Pro',monospace;font-size: 5vh; color:white; left:60vw;text-align: left;top:440vh" class="reveal">OS Development <br>since 2019</portfolio-description>
+    </div>
+    <div style="background-color: #333333;height: 100vh;" >
+        
+        <a href="https://github.com/pennacap" tabindex="0"><img src="github.png" class="reveal" style="padding-left:4vw;padding-right:4vw;width:25vw;position:relative;top:25vh;left:0vw;background-color: #444;z-index: 2;" alt="Github Logo"></a>
+        <a href="https://www.spigotmc.org/members/pennacap.1223654/" style="position: absolute;left:33vw;" tabindex="0"><img src="spigot.png" class="reveal" style="padding-left:4vw;padding-right:4vw;width:25vw;position:relative;top:25vh;left:0vw;background-color: #444;z-index: 2;" alt="SpigotMC Logo"></a>
+        <img src="discord.png" tabindex="0" onclick="document.getElementById('copy1').style.opacity=1;navigator.clipboard.writeText('pennacap#0797');setTimeout(()=>{document.getElementById('copy1').style.opacity=0;},3000);" class="reveal" style="width:25vw;background-color: #444;z-index: 2;top:25vh;position:relative;padding-left:4vw;padding-right:4vw;cursor: pointer;left: 32.8vw;" alt="Discord Logo">
+        <div style="opacity:0;width: 33vw;position: relative;top:24.5vh;left:66vw;background-color: lime;border-radius: 3px;color:white;text-align: center;transition: all 0s;font-family:'Source Code Pro',monospace;font-weight: bold;" id="copy1">COPIED</div>
+        
+    </div>
+    <footer style="background-color:#111111;color:white;font-family: monospace;padding: 1vw;font-size: 2vw;">
+        Copyright, pennacap @ 2022
+    </footer>
+        
+</body>
 </html>

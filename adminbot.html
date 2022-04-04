@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="pennacap">
+    <meta name="keywords" content="Bot, Python, Discord, Moderation, Verified">
+    <meta name="description" content="The website for AdminBot">
+    <meta property="og:title" content="AdminBot" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pennacap.dev/adminbot.html" />
+    <meta property="og:image" content="adminbot.webp" />
+    <meta property="og:description" content="The website for AdminBot" />
+    <link rel="icon" href="adminbot.webp" type="image/webp">
+    <script>
+        
+        const reveals = document.getElementsByClassName('reveal');
+        window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('show');
+        }
+        else{
+          reveals[i].classList.remove('show');
+        }
+      }
+    }
+        
+        
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@351&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+        
+        nav {
+            white-space: nowrap;
+        }
+        .normie-button {
+            background-color: #222222;cursor:pointer;padding: 1vh;width:33vw;color: #eeeeee;border:none;transition:all 0.2s;font-weight: bolder;
+            font-family: 'Source Code Pro', monospace;
+
+        }
+        .normie-button:hover{
+            background-color: #333333;
+        }
+        .reveal{
+            opacity: 0;
+            transform: translateY(10vh);
+            transition: 2s all,0s z-index;
+        }
+        .reveal.show{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        ::-webkit-scrollbar {
+            width: 0.5vw;
+        }
+        
+::-webkit-scrollbar-track {
+  background: #2e2e2e; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #222; 
+  border-radius: 10vw;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #111; 
+}
+    </style>
+
+    <title>pennacap.dev - AdminBot</title>
+</head>
+<body style="margin: 0;">
+    <nav style="position: fixed; background-color: #222222;width: 100vw;box-shadow: 0 4px 8px 0 rgba(0.33,0.33,0.33,0.2);display: inline-block;z-index: 99999;">
+        <a href="index.html"><button class="normie-button"">HOME</button></a>
+        <button class="normie-button" style="background-color: #231226;">ADMINBOT</button>
+        <a href="pinc.html"><button class="normie-button"">PENNACAP.INC</button></a>
+    </nav>
+    <main><div style="background-color: #1a1a1a;height: 100vh;">
+        <div style="position:absolute;background-color: #090909;width: 25vw;height: 25vh;border-radius: 5vh;top:37.5vh;left:62.5vw">
+            <h1 style="font-family:monospace;color:#ffffff;text-align: center;font-size: 5vh;" id="title">AdminBot</h1>
+            <p style="color: #dedede;text-align:center;font-family: 'Source Code Pro',monospace; font-size: 2vh;">A moderation bot, for you,<br>the server owner</h2>
+            
+        </div>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=927467703453769808&permissions=1118854851622&scope=bot%20applications.commands" tabindex="0"><img src="adminbot.webp" style="position:absolute;top: 30vh; left:20vw; width: 40vh; border-radius: 1vw; z-index: 2;" alt="AdminBot logo" onmouseover="document.getElementById('addToDiscord').style.top='69vh'" onmouseleave="document.getElementById('addToDiscord').style.top='65vh'"></a>
+        <div id="addToDiscord" style="transition: top 2s;position:absolute;left:20vw;width:40vh;height:2vh;top:65vh;color:white;font-family: 'Source Code Pro',monospace; background-color: lime;text-align: center;font-weight: bold;padding-top: 1vh;">ADD TO SERVER</div>
+    </div></main>
+</body>
+</html>
