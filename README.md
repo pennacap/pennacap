@@ -29,7 +29,7 @@ Check out my projects!
 
 | [![AdminBot](https://cdn.discordapp.com/avatars/927467703453769808/2b2864bdb74d98ecaedd933e8e20cab4.png?size=256)](https://pennacap.dev/adminbot) | [![Pennacap Inc.](https://cdn.discordapp.com/icons/889875870729256970/c930bc463edf800aba1b3afab3547b3f.png?size=256)](https://pennacap.dev/pinc) |
 |---|---|
-| ![ApiFy The World](https://avatars.githubusercontent.com/u/103250770?s=256&v=4) | ![BarryCommunity](https://avatars.githubusercontent.com/u/102686950?s=256&v=4) |
+| [![ApiFy The World](https://avatars.githubusercontent.com/u/103250770?s=256&v=4)](https://github.com/ApiFy-The-World) | [![BarryCommunity](https://avatars.githubusercontent.com/u/102686950?s=256&v=4)](https://github.com/BarryCommunity) |
 
 # Stats
 ![Ranking](https://github-readme-stats.vercel.app/api?username=pennacap&theme=blue-green)
